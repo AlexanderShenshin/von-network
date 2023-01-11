@@ -2,7 +2,7 @@
 
 set -e
 
-if [ ! -f "/home/indy/config/genesis.txn" ] && [ -z "${GENESIS_URL}" ] && [ -z "${GENESIS_FILE}" ]; then
+if [ ! -f "/home/indy/ledger/sandbox/pool_transactions_genesis" ] && [ -z "${GENESIS_URL}" ] && [ -z "${GENESIS_FILE}" ]; then
   bash ./scripts/init_genesis.sh
 fi
 

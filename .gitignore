@@ -152,7 +152,6 @@ Pipfile
 config/aml.json
 config/taa.json
 config/.samples.used
-config/genesis.txn
 
 # Visual Studio Code
 .history

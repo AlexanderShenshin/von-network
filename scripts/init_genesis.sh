@@ -2,11 +2,7 @@
 
 set -e
 
-if [ ! -d "/home/indy/config" ]; then
-    echo "Missing config directory, must be mounted"
-    exit 1
-fi
-if [ -f "/home/indy/config/genesis.txn" ]; then
+if [ -f "/home/indy/ledger/sandbox/pool_transactions_genesis" ]; then
     echo "Genesis transactions file already exists"
     exit
 fi
@@ -21,5 +17,3 @@ else
     echo von_generate_transactions
     von_generate_transactions
 fi
-
-cp /home/indy/ledger/sandbox/pool_transactions_genesis /home/indy/config/genesis.txn
